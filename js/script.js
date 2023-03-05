@@ -23,5 +23,5 @@ $(document).ready(function(){
     if(hour>17){
         message="Good Evening!";
     }
-    $('#headingText').empty().append(message + " From TPL")
+    $('#headingText').empty().append(message + " Thuok Poleak")
 })
