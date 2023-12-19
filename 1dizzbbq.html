@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Menu</title>
+    <style>
+        
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        section {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .menu-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .menu-page {
+            flex: 0 0 100%;
+            max-width: 100vw;
+            box-sizing: border-box;
+            padding: 1em;
+        }
+
+        .menu-page img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 2em;
+            position: relative;
+        }
+
+        strong {
+            display: block;
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+            position: fixed;
+            top: 50%;
+            transform: translate(0%, 0%);
+        }
+
+        .next {
+            right: 10px;
+            position: fixed;
+            top: 50%;
+            transform: translate(0%, 0%);
+        } 
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/dizz.png" class="logo">
+        <h1>DIZZ BBQ SEAFOOD</h1>
+    </header>
+
+    <section>
+        <div class="menu-container">
+            <div class="menu-page">
+                <h2>Menu Page 1</h2>
+                <ul>
+                    <li>
+                        <img src="img/trey.jpg" alt="Grilled Salmon">
+                        <span>16,000រ</span>
+                        <strong>ត្រីសាំបាក់</strong> 
+                        <p1>&emsp;-ត្រីសាំបាក់អាំងគ្រឿងចិន​<br></p1>
+                    </li>
+                    <li>
+                        <img src="grilled-salmon.jpg" alt="Grilled Salmon">
+                        <span>60,000រ</span>
+                        <strong>ក្តាមស្រស់</strong> 
+                        <p1>&emsp;-ក្តាមឆាគ្រឿងចិន<br></p1>
+                        <p1>&emsp;-ក្តាមឆាមីសួរ<br></p1>
+                        <p1>&emsp;-ក្តាមស្រោះ<br></p1>
+                        <p1>&emsp;-ក្តាមចំហុយ<br></p1>
+                    </li>
+                    <li>
+                        <img src="grilled-salmon.jpg" alt="Grilled Salmon">
+                        <span>60,000រ</span>
+                        <strong>ក្តាមស្រស់</strong> 
+                        <p1>&emsp;-ក្តាមឆាគ្រឿងចិន<br></p1>
+                        <p1>&emsp;-ក្តាមឆាមីសួរ<br></p1>
+                        <p1>&emsp;-ក្តាមស្រោះ<br></p1>
+                        <p1>&emsp;-ក្តាមចំហុយ<br></p1>
+                    </li>
+                    <!-- Add more menu items as needed -->
+                </ul>
+            </div>
+            <div class="menu-page">
+                <h2>Menu Page 2</h2>
+                <ul>
+                    <li>
+                        <img src="shrimp-scampi.jpg" alt="Shrimp Scampi">
+                        <span>$16.99</span>
+                        <strong>Shrimp Scampi</strong> - Succulent shrimp sautéed in garlic and white wine.
+                    </li>
+                    <!-- Add more menu items as needed -->
+                </ul>
+            </div>
+            <div class="menu-page">
+                <h2>Menu Page 3</h2>
+                <ul>
+                    <li>
+                        <img src="shrimp-scampi.jpg" alt="Shrimp Scampi">
+                        <span>$16.99</span>
+                        <strong>Shrimp Scampi</strong> - Succulent shrimp sautéed in garlic and white wine.
+                    </li>
+                    <!-- Add more menu items as needed -->
+                </ul>
+            </div>
+            <!-- Add more menu pages as needed -->
+        </div>
+        <div class="prev" onclick="changePage(-1)">❮</div>
+        <div class="next" onclick="changePage(1)">❯</div>
+    </section>
+
+    <script>
+        let currentPage = 0;
+
+        function changePage(direction) {
+            const container = document.querySelector('.menu-container');
+            const pages = document.querySelectorAll('.menu-page');
+            const totalPages = pages.length;
+
+            currentPage = (currentPage + direction + totalPages) % totalPages;
+            const translateValue = -currentPage * 100 + '%';
+
+            container.style.transform = 'translateX(' + translateValue + ')';
+        }
+    </script>
+
+</body>
+</html>
