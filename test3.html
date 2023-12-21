@@ -1,25 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DIZZ</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="center gap">
-            <img src="img/DIZZBBQ.jpg" class="logo">
-         
-        </div>
-       
-        <div class="center">
-            <h1 id="headingText">Good Morning! From DIZZ SEAFOOD</h1>
-        </div>
-        
-        <h1></h1>
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
 
-        <script src="js/jquery.js"></script>
-        <script src="js/dizz.js"></script>
-        new update
-    </body>
+        #logo {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        #menu {
+            padding: 20px;
+        }
+
+        .food-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .food-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Restaurant Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#food1">Food Item 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#food2">Food Item 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#food3">Food Item 3</a>
+                </li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header with Logo and Restaurant Name -->
+    <header>
+        <img id="logo" src="images/logo.png" alt="Restaurant Logo">
+        <h1>Restaurant Name</h1>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <!-- Food Item 1 -->
+        <div id="food1" class="food-item">
+            <img class="food-image" src="images/food1.jpg" alt="Food 1">
+            <h2>Food Item 1</h2>
+            <p>Description of Food Item 1.</p>
+            <p>Price: $10.99</p>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div id="food2" class="food-item">
+            <img class="food-image" src="images/food2.jpg" alt="Food 2">
+            <h2>Food Item 2</h2>
+            <p>Description of Food Item 2.</p>
+            <p>Price: $12.99</p>
+        </div>
+
+        <!-- Food Item 3 -->
+        <div id="food3" class="food-item">
+            <img class="food-image" src="images/food3.jpg" alt="Food 3">
+            <h2>Food Item 3</h2>
+            <p>Description of Food Item 2.</p>
+            <p>Price: $12.99</p>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div id="food4" class="food-item">
+            <img class="food-image" src="images/food4.jpg" alt="Food 4">
+            <h2>Food Item 4</h2>
+            <p>Description of Food Item 2.</p>
+            <p>Price: $12.99</p>
+        </div>
+
+        <!-- Add more food items as needed -->
+
+    </section>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>

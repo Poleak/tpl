@@ -3,77 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seafood Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant Name</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
 
         header {
             background-color: #333;
-            color: #fff;
+            padding: 10px;
             text-align: center;
-            padding: 1em;
+            color: white;
         }
 
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        #logo {
+            max-width: 100px;
+            max-height: 100px;
         }
 
-        h2 {
-            color: #333;
+        #menu {
+            padding: 20px;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .food-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
         }
 
-        li {
-            margin-bottom: 1em;
-        }
-
-        a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        .food-image {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="center gap">
-        <header>
-            <img src="img/DIZZBBQ.jpg" class="logo">
-            <h1>Seafood Delights</h1>
-        </header>
-    </div>
-    <section>
-        <h2>Menu</h2>
-        <ul>
-            <li>
-                <strong>Grilled Salmon</strong> - Fresh salmon fillet grilled to perfection. Served with lemon butter sauce. $18.99
-            </li>
-            <li>
-                <strong>Shrimp Scampi</strong> - Succulent shrimp sautéed in garlic and white wine. $16.99
-            </li>
-            <li>
-                <strong>Lobster Tail</strong> - Lobster tail broiled with garlic, butter, and a touch of paprika. $24.99
-            </li>
-            <li>
-                <strong>Clam Linguine</strong> - Linguine pasta with tender clams in a savory white wine sauce. $14.99
-            </li>
-        </ul>
+
+    <!-- Header with Logo and Restaurant Name -->
+    <header>
+        <img id="logo" src="images/logo.png" alt="Restaurant Logo">
+        <h1>Restaurant Name</h1>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <!-- Food Item 1 -->
+        <div class="food-item">
+            <img class="food-image" src="img/trey.jpg" alt="Food 1">
+            <h2>ត្រីសាំបាក់</h2>
+            <p>ត្រីសាំបាក់អាំងគ្រឿងចិន​</p>
+            <h4>តម្លៃ: 16,000រ</h4>
+        </div>
+
+        <!-- Food Item 2 -->
+        <div class="food-item">
+            <img class="food-image" src="img/try.jpg" alt="Food 2">
+            <h2>ក្តាម</h2>
+            <p1>&emsp;ក្តាមឆាគ្រឿងចិន<br></p1>
+            <p1>&emsp;ក្តាមឆាមីសួរ<br></p1>
+            <p1>&emsp;ក្តាមស្រោះ<br></p1>
+            <p1>&emsp;ក្តាមចំហុយ<br></p1>
+            <h4>តម្លៃ: 60,000រ</h4>
+        </div>
+        <div class="food-item">
+            <img class="food-image" src="img/try.jpg" alt="Food 2">
+            <h2>ក្តាម</h2>
+            <p1>&emsp;ក្តាមឆាគ្រឿងចិន<br></p1>
+            <p1>&emsp;ក្តាមឆាមីសួរ<br></p1>
+            <p1>&emsp;ក្តាមស្រោះ<br></p1>
+            <p1>&emsp;ក្តាមចំហុយ<br></p1>
+            <h4>តម្លៃ: 60,000រ</h4>
+        </div>
+        <div class="food-item">
+            <img class="food-image" src="img/try.jpg" alt="Food 2">
+            <h2>ក្តាម</h2>
+            <p1>&emsp;ក្តាមឆាគ្រឿងចិន<br></p1>
+            <p1>&emsp;ក្តាមឆាមីសួរ<br></p1>
+            <p1>&emsp;ក្តាមស្រោះ<br></p1>
+            <p1>&emsp;ក្តាមចំហុយ<br></p1>
+            <h4>តម្លៃ: 60,000រ</h4>
+        </div>
+        <div class="food-item">
+            <img class="food-image" src="img/try.jpg" alt="Food 2">
+            <h2>ក្តាម</h2>
+            <p1>&emsp;ក្តាមឆាគ្រឿងចិន<br></p1>
+            <p1>&emsp;ក្តាមឆាមីសួរ<br></p1>
+            <p1>&emsp;ក្តាមស្រោះ<br></p1>
+            <p1>&emsp;ក្តាមចំហុយ<br></p1>
+            <h4>តម្លៃ: 60,000រ</h4>
+        </div>
+
+        <!-- Add more food items as needed -->
+
     </section>
 
 </body>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        #logo {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        nav {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        #menu {
+            padding: 20px;
+        }
+
+        .food-item {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .food-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #e44d26;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+        .bar{
+            margin-left: -2%;
+            margin-right: -2%;
+        }
+        .three-columns-grid {
+            margin-top: -8%;
+            margin-bottom: -8%;
+            display: grid;
+            grid-auto-rows: 1fr;
+            grid-template-columns: 3fr 1fr 1fr;
+        }
+        .three-columns-grid > * {
+            padding:1rem;
+        }
+        p1{
+            margin-left: -10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo and Restaurant Name -->
+    <header>
+        <img id="logo" src="img/dizz.png" alt="Restaurant Logo">
+        <h1>DIZZ BBQ</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#food1" class="bar">ក្តាម</a>
+        <a href="#food2" class="bar">បង្កង</a>
+        <a href="#food3" class="bar">មឹក</a>
+        <a href="#food4" class="bar">លាស</a>
+        <a href="#food5" class="bar">ផ្សេងៗ</a>
+        <!-- Add more links for each food item -->
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <!-- Food Item 1 -->
+        <div id="food1" class="food-item">
+            <img class="food-image" src="images/food1.jpg" alt="Food 1">
+            <h2>ក្តាមថ្ម</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>ក្តាមថ្មឆាមីសួរ<br></p1>
+                    <p1>ក្តាមថ្មឆាម្រិចខ្ចី<br></p1>
+                    <p1>ក្តាមថ្មចំហុយ<br></p1>
+                    <p1>ក្តាមថ្មអាំង<br></p1>
+                    <h4>១គីឡូ: 60,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>24000រ</p1>
+                    <p1>24000រ</p1> 
+                    <p1>24000រ</p1> 
+                    <p1>24000រ</p1> 
+                </div>
+            </div>
+
+
+            <h2>ក្តាមសេះ</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>ក្តាមសេះឆាមីសួរ<br></p1>
+                    <p1>ក្តាមសេះឆាម្រិចខ្ចី<br></p1>
+                    <p1>ក្តាមសេះចំហុយ<br></p1>
+                    <p1>ក្តាមសេះអាំងអំបិម្ទេស<br></p1>
+                    <p1>ក្តាមសេះអាំងគ្រឿងចិន<br></p1>
+                    <h4>១គីឡូ: 60,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>28000រ</p1> 
+                    <p1>20000រ</p1> 
+                    <p1>20000រ</p1>
+                    <p1>20000រ</p1> 
+                    <p1>20000រ</p1> 
+                </div>
+            </div>
+
+        <!-- Food Item 2 -->
+        </div>
+        <div id="food2" class="food-item">
+            <img class="food-image" src="images/food1.jpg" alt="Food 2">
+            <h2>បង្កង</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>បង្កងឆាមីសួរ<br></p1>
+                    <p1>បង្កងឆាម្រិចខ្ចី<br></p1>
+                    <p1>បង្កងចំហុយ<br></p1>
+                    <p1>បង្កងអាំងគ្រឿងចិន<br></p1>
+                    <p1>បង្កងអាំងខ្ទឹមស<br></p1>
+                    <p1>បង្កងតុងយាំ<br></p1>
+                    <h4>១គីឡូ: 80,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                </div>
+            </div>
+            <h2>បង្គា</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>បង្គាឆាមីសួរ<br></p1>
+                    <p1>បង្គាឆាម្រិចខ្ចី<br></p1>
+                    <p1>បង្គាចំហុយ<br></p1>
+                    <p1>បង្គាអាំងគ្រឿងចិន<br></p1>
+                    <p1>បង្គាអាំងខ្ទឹមស<br></p1>
+                    <p1>បង្គាតុងយាំ<br></p1>
+                    <h4>១គីឡូ: 60,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Item 3 -->
+        <div id="food3" class="food-item">
+            <img class="food-image" src="images/food1.jpg" alt="Food 3">
+            <h2>មឹក</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>ភ្លាមឹកឆាពីងពាង<br></p1>
+                    <p1>មឹកឆាគ្រឿងចិន<br></p1>
+                    <p1>មឹកឆាខ្ទឹមស<br></p1>
+                    <p1>មឹកចំហុយ<br></p1>
+                    <p1>មឹកអាំង<br></p1>
+                    <p1>មឹកតុងយាំ<br></p1>
+                    <h4>១គីឡូ: 60,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Item 4 -->
+        <div id="food4" class="food-item">
+            <img class="food-image" src="images/food1.jpg" alt="Food 4">
+            <h2>លាសហូល</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>លាសហូលឆាគ្រឿងចិន<br></p1>
+                    <p1>លាសហូលឆាខ្ទឹមស<br></p1>
+                    <p1>លាសហូលឆាអំពិលទំ<br></p1>
+                    <p1>លាសហូលស្រោះ<br></p1>
+                    <p1>លាសហូលតុងយាំ<br></p1>
+                    <h4>១គីឡូ: 40,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                </div>
+            </div>
+            <h2>ខ្ចងប៉ារ៉ា</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>ចងប៉ារ៉ាឆាគ្រឿងចិន<br></p1>
+                    <p1>ចងប៉ារ៉ាឆាខ្ទឹមស<br></p1>
+                    <p1>ចងប៉ារ៉ាឆាអំពិលទំ<br></p1>
+                    <p1>ចងប៉ារ៉ាស្រោះ<br></p1>
+                    <p1>ចងប៉ារ៉ាតុងយាំ<br></p1>
+                    <h4>១គីឡូ: 60,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                    <p1>18000រ</p1>
+                </div>
+            </div>
+            <h2>ខ្ចងឫស្សី</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>ចងប៉ារ៉ាឆាគ្រឿងចិន<br></p1>
+                    <p1>ចងប៉ារ៉ាឆាខ្ទឹមស<br></p1>
+                    <p1>ចងប៉ារ៉ាឆាអំពិលទំ<br></p1>
+                    <h4>១គីឡូ: 50,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                    <p1>16000រ</p1>
+                </div>
+            </div>
+            <h2>ងាវ</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>ងាវស្រោះ<br></p1>
+                    <p1>ងាវអប់<br></p1>
+                    <p1>ងាវអាំង<br></p1>
+                    <h4>១គីឡូ: 50,000រ</h4>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>15000រ</p1>
+                    <p1>15000រ</p1>
+                    <p1>15000រ</p1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food Item 5 -->
+        <div id="food5" class="food-item">
+            <img class="food-image" src="images/food5.jpg" alt="Food 5">
+            <h2>បុកល្ហុង</h2>
+            <div class="three-columns-grid">
+                <div>
+                    <p1>បុកល្ហុងក្តាមសេះ<br></p1>
+                    <p1>បុកល្ហុងបង្គា<br></p1>
+                    <p1>បុកល្ហុងក្តាមប្រៃ<br></p1>
+                </div>
+                <div>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                    <p1>១ចាន<br></p1>
+                </div>
+                <div>
+                    <p1>16000រ</p1>
+                    <p1>12000រ</p1>
+                    <p1>10000រ</p1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more food items as needed -->
+
+    </section>
+
+</body>
+</html>
