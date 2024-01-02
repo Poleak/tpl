@@ -1,0 +1,25 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact,
+.education,
+.experience {
+    margin: 20px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+/* Add more styling as needed */
