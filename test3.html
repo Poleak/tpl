@@ -1,62 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .profile-img {
-      max-width: 100%;
-      border-radius: 50%;
-    }
-  </style>
-  <title>Your CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Image</title>
+    <style>
+        /* Optional styling for the larger image view */
+        #largerImage {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="your-image.jpg" alt="Your Name" class="profile-img">
-    <h1>Your Name</h1>
-    <p>Job Title</p>
-    <p>Email: your.email@example.com</p>
-    <p>Phone: (123) 456-7890</p>
 
-    <h2>Summary</h2>
-    <p>Passionate and dedicated professional with expertise in [Your Field]. Proven track record of [Your Achievements]. Excels in [Skills].</p>
+    <!-- Clickable Image -->
+    <a href="path/to/larger-image.jpg" target="_blank" onclick="return enlargeImage()">
+        <img src="path/to/thumbnail-image.jpg" alt="Click to view larger image">
+    </a>
 
-    <h2>Experience</h2>
-    <h3>Company Name - Job Title (MM/YYYY - Present)</h3>
-    <p>Describe your responsibilities and achievements in this role.</p>
+    <!-- Larger Image View (hidden by default) -->
+    <div id="largerImage">
+        <img src="path/to/larger-image.jpg" alt="Larger Image">
+    </div>
 
-    <!-- Repeat the above block for each job experience -->
+    <script>
+        // JavaScript function to open larger image
+        function enlargeImage() {
+            document.getElementById('largerImage').style.display = 'block';
+            return false; // Prevents the default link behavior
+        }
+    </script>
 
-    <h2>Education</h2>
-    <h3>Degree, University Name (MM/YYYY - MM/YYYY)</h3>
-    <p>Provide details about your academic achievements and coursework.</p>
-
-    <!-- Repeat the above block for each educational experience -->
-
-    <h2>Skills</h2>
-    <ul>
-      <li>Skill 1</li>
-      <li>Skill 2</li>
-      <li>Skill 3</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </div>
 </body>
 </html>
-
